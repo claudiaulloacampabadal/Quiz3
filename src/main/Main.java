@@ -30,9 +30,9 @@ public class Main {
             try {
                 reference.next = a.getNode(1);
                 a.getNode(a.size()).next = b.getNode(1);
-                b.getNode(a.size()).next = c.getNode(1);
-                c.getNode(a.size()).next = d.getNode(1);
-                d.getNode(a.size()).next = null;
+                b.getNode(b.size()).next = c.getNode(1);
+                c.getNode(c.size()).next = d.getNode(1);
+                d.getNode(d.size()).next = null;
                 
                 
             } catch (ListException ex) {
