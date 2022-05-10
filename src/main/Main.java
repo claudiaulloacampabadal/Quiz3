@@ -51,7 +51,7 @@ public class Main {
                 
         }
         
-           public String display(Object reference){
+           public static String display(Object reference){
         String result = "";
         
         Node aux = (Node) reference;
