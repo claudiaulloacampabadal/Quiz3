@@ -5,10 +5,10 @@
  */
 package util;
 
-import domain.Course;
-import domain.DoublyLinkedList;
-import domain.SinglyLinkedList;
-import domain.Student;
+import main.Course;
+import main.DoublyLinkedList;
+import main.SinglyLinkedList;
+import main.Student;
 import java.text.DecimalFormat;
 import java.util.Random;
 
