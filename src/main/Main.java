@@ -23,8 +23,20 @@ public class Main {
         b.add(new Course("IF-4001","Estadistica",3));
         b.add(new Course("IF-4000","Introduccion a sistemas",2));
         b.add(new Course("IF-4100","Algebra",3));
+                
+         CircularLinkedList c = new CircularLinkedList();
+        c.add(new Student("606590372", "Gabriela", 30, "Puntarenas"));
+        c.add(new Student("109590371", "Fabiana", 90, "Curridabat"));
+        c.add(new Student("306390376", "Gonzalo", 33, "Taras"));
+        c.add(new Student("106590371", "Amalia", 34, "San Pedro"));
+        c.add(new Student("306590379", "Mario", 39, "Tierra Blanca"));
         
-        CircularLinkedList c=new CircularLinkedList();
+        CircularDoublyLinkedList cd = new CircularDoublyLinkedList();
+        cd.add(new Student("306590372", "Gabriel", 12, "Puntarenas"));
+        cd.add(new Student("103292372", "Fabian", 13, "Curridabat"));
+        cd.add(new Student("306370372", "Paula", 14, "Taras"));
+        cd.add(new Student("106690372", "Alonso", 15, "San Pedro"));
+        cd.add(new Student("306590377", "María", 16, "Tierra Blanca"));
                 
           Node reference = new Node("Reference");
             try {
