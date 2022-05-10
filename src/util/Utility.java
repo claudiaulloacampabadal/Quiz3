@@ -5,12 +5,12 @@
  */
 package util;
 
-import domain.DoublyLinkedList;
-import domain.SinglyLinkedList;
-import domain.CircularLinkedList;
-import domain.CircularDoublyLinkedList;
-import domain.Employee;
-import domain.JobPosition;
+import main.DoublyLinkedList;
+import main.SinglyLinkedList;
+import main.CircularLinkedList;
+import main.CircularDoublyLinkedList;
+import main.Employee;
+import main.JobPosition;
 import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.FieldPosition;

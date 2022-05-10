@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package main;
+import java.util.Calendar;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -53,48 +54,49 @@ public class Main {
         c.add(new Employee("7542", "Montoya ", "Maria", "inglés", calendar2.getTime()));
         c.add(new Employee("734722", "Soto", "Nicolas", "turismo", calendar3.getTime()));
         c.add(new Employee("234325", "Quiros", "Javier", "agronomía", calendar4.getTime()));
-     
-        
+
         CircularDoublyLinkedList d = new CircularDoublyLinkedList();
-        
+
         d.add(new JobPosition("Programadora", 20));
         d.add(new JobPosition("Educadora", 30));
         d.add(new JobPosition("Manager", 12));
         d.add(new JobPosition("Abogado", 16));
         d.add(new JobPosition("Fisioterapueta", 35));
 
-                
-          Node reference = new Node("Reference");
-            try {
-                reference.next = a.getNode(1);
-                a.getNode(a.size()).next = b.getNode(1);
-                b.getNode(b.size()).next = c.getNode(1);
-                c.getNode(c.size()).next = d.getNode(1);
-                d.getNode(d.size()).next = null;
-                
-                
-            } catch (ListException ex) {
-                Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
-            }
-                
-            System.out.println("LISTA REFERENCE NORMAL\n"+ display(reference)+"\n");
-            
-          //  System.out.println("LISTA REFERENCE INVERTIDA\n"+ inverse(reference));
-                
+        Node reference = new Node("Reference");
+        try {
+            reference.next = a.getNode(1);
+            a.getNode(a.size()).next = b.getNode(1);
+            b.getNode(b.size()).next = c.getNode(1);
+            c.getNode(c.size()).next = d.getNode(1);
+            d.getNode(d.size()).next = null;
+
+        } catch (ListException ex) {
+            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        
-           public static String display(Object reference){
-        String result = "";
-        
-        Node aux = (Node) reference;
-        while(aux != null){
-            result+= aux.data +"\n";
-            aux = aux.next;
-            
-        }
-        
-        return result;
-        
+
+        System.out.println("LISTA REFERENCE NORMAL\n" + display(reference) + "\n");
+
+        //  System.out.println("LISTA REFERENCE INVERTIDA\n"+ inverse(reference));
     }
+
+    public static String display(Object reference) {
+        String result = "";
+
+        Node aux = (Node) reference;
+        while (aux != null) {
+            result += aux.data + "\n";
+            aux = aux.next;
+
+        }
+
+        return result;
+
+    }
+    
+    public static String inverse(Object reference){
+        String result="";
+    }
+
+
 }
