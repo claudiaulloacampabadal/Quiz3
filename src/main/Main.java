@@ -94,8 +94,25 @@ public class Main {
 
     }
     
-    public static String inverse(Object reference){
-        String result="";
+//    public static String inverse(Object reference){
+//        String result="";
+//    }
+     public static void printReverse(Node head){
+    
+        // store Node addresses in stack
+        Stack<Node> stk = new Stack<Node>();
+        Node ptr = head;
+        while (ptr != null) {
+            stk.push(ptr);
+            ptr = ptr.next;
+        }
+ 
+        // print data from stack
+        while (stk.size() > 0) {
+            System.out.print(stk.peek().data + " ");
+            stk.pop(); // pop after print
+        }
+        System.out.println("\n");
     }
 
 
