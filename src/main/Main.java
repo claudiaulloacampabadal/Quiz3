@@ -43,8 +43,8 @@ public class Main {
                 reference.next = a.getNode(1);
                 a.getNode(a.size()).next = b.getNode(1);
                 b.getNode(b.size()).next = c.getNode(1);
-                c.getNode(c.size()).next = d.getNode(1);
-                d.getNode(d.size()).next = null;
+                c.getNode(c.size()).next = cd.getNode(1);
+                cd.getNode(cd.size()).next = null;
                 
                 
             } catch (ListException ex) {
