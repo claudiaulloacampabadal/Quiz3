@@ -16,17 +16,19 @@ public class DoublyLinkedList implements List {
     //Constructor
     public DoublyLinkedList() {
         this.first = null;
-    }
-    public String diplay(){
+    }   
+        
+    public String diplay(Object reference){
         String result = "";
         
-        Node aux = first;
+        Node aux = (Node) reference;
         while(aux != null){
-            result
+            result+= aux.data +"\n";
+            aux = aux.next;
             
         }
         
-        
+        return result;
         
     }
     
