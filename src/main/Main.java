@@ -25,7 +25,22 @@ public class Main {
         b.add(new Course("IF-4100","Algebra",3));
         
         CircularLinkedList c=new CircularLinkedList();
-        
+                
+          Node reference = new Node("Reference");
+            try {
+                reference.next = a.getNode(1);
+                a.getNode(a.size()).next = b.getNode(1);
+                b.getNode(a.size()).next = c.getNode(1);
+                c.getNode(a.size()).next = d.getNode(1);
+                d.getNode(a.size()).next = null;
+                
+                
+            } catch (ListException ex) {
+                Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+            }
+                
+                
+                
         }
         
            public String diplay(Object reference){
