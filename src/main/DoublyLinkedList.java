@@ -17,20 +17,6 @@ public class DoublyLinkedList implements List {
     public DoublyLinkedList() {
         this.first = null;
     }   
-        
-    public String diplay(Object reference){
-        String result = "";
-        
-        Node aux = (Node) reference;
-        while(aux != null){
-            result+= aux.data +"\n";
-            aux = aux.next;
-            
-        }
-        
-        return result;
-        
-    }
     
     
     @Override
